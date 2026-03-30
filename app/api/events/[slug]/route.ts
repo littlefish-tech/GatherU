@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/lib/mongodb";
 import Event from "@/database/event.model";
 
+export const dynamic = "force-dynamic";
+
 // Define route params type for type safety
 type RouteParams = {
   params: Promise<{
