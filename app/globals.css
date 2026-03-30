@@ -246,6 +246,11 @@
     .header {
       @apply flex w-2/3 flex-col items-start gap-4 max-lg:w-full mb-10;
 
+      h1 {
+        @apply bg-none text-slate-900;
+        -webkit-text-fill-color: currentColor;
+      }
+
       p {
         @apply text-slate-700;
       }
