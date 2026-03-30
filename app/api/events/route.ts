@@ -7,8 +7,6 @@ import path from "path"
 import connectDB from "@/lib/mongodb"
 import Event from "@/database/event.model"
 
-export const dynamic = "force-dynamic"
-
 export async function POST(req: NextRequest) {
   try {
     await connectDB()
